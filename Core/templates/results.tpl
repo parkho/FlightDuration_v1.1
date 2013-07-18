@@ -57,22 +57,22 @@ $avvvs = ($vspeed1 + $vspeed2)/2
 <tr><td colspan="2"><hr></td></tr>
 <tr>
 <td align="left"><strong>Climb Time</strong></td>
-<td align="left"><?php echo Util::FormatDuration($clmbtime) ;?> hrs</td>		
+<td align="left"><?php echo round($clmbtime, 2) ;?> hrs</td>		
 </tr>
 <tr><td colspan="2"><hr></td></tr>
 <tr>
 <td align="left"><strong>Cruise Time</strong></td>
-<td align="left"><?php echo Util::FormatDuration($crstime) ;?> hrs</td>		
+<td align="left"><?php echo round($crstime, 2) ;?> hrs</td>		
 </tr>
 <tr><td colspan="2"><hr></td></tr>
 <tr>
 <td align="left"><strong>Descend & Approach Time</strong></td>
-<td align="left"><?php echo Util::FormatDuration($destime) ;?> hrs</td>		
+<td align="left"><?php echo round($destime, 2) ;?> hrs</td>		
 </tr>
 <tr><td colspan="2"><hr></td></tr>
 <tr>
 <td align="left"><strong>Estimated Total Flight Duration from <?php echo $depicao ;?> to <?php echo $arricao; ?></strong></td>
-<td align="left"><?php echo Util::FormatDuration($flightduration) ;?> hrs</td>		
+<td align="left"><?php echo round($flightduration, 2) ;?> hrs</td>		
 </tr>
 <tr><td colspan="2"><hr></td></tr>
 </table>
