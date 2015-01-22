@@ -14,4 +14,4 @@ Install:
 4. Enjoy.
 
 ===================
-Email me at info@alvandair.com or leave a post at the forum in case of any troubles.
+Email me at pkhorraminejad@ymail.com or leave a post at the forum in case of any troubles.
