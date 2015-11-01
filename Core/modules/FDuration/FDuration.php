@@ -5,7 +5,7 @@ class FDuration extends CodonModule
         {
 	    $this->set('title','Flight Duration');
             $this->set('distance', OperationsData :: getAirportDistance($depicao, $arricao)); 
-            $this->show('/fduration/timecalculator.tpl');
+            $this->show('/fduration/timecalculator.php');
 	}
 	
 	public function results() 
@@ -42,7 +42,7 @@ class FDuration extends CodonModule
             $this->set('crstime', $crstime);
             $this->set('destime', $destime);
             $this->set('distance', $distance); 
-            $this->show('/fduration/results.tpl');
+            $this->show('/fduration/results.php');
 			
             
         }
