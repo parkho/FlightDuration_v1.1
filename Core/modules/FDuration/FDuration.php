@@ -3,9 +3,18 @@ class FDuration extends CodonModule
 {
 	public function index() 
         {
-	    $this->set('title','Flight Duration');
-            $this->set('distance', OperationsData :: getAirportDistance($depicao, $arricao)); 
-            $this->show('/fduration/timecalculator.php');
+			$revision = trim(file_get_contents(CORE_PATH.'/version'));
+			if($revision != 'simpilot 5.5.2')
+				{
+					echo '<center>phpVMS Version Installed Is Not Compatible With This Module!</center><br />';
+					echo '<center>phpVMS Version Installed: '.$revision.'</center>';
+				}
+			else
+			{
+				$this->set('title','Flight Duration');
+				$this->set('distance', OperationsData :: getAirportDistance($depicao, $arricao)); 
+				$this->show('/fduration/timecalculator.php');
+			}
 	}
 	
 	public function results() 
